@@ -15,9 +15,15 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import include, path
+from grades.views import StudentViewSet
+from rest_framework import routers
 #from django.conf import settings
 
+router = routers.DefaultRouter()
+router.register('grades', StudentViewSet)
+
 urlpatterns = [
+    path('', include(router.urls)), 
     path('admin/', admin.site.urls),
 ]
 
