@@ -4,10 +4,10 @@
     O objetivo desse projeto é desenvolver uma Rest Api de Alunos aprovados em provas acadêmicas.
 </p>
 
-<p>Requisitos obrigaórios:</p>
+<p>Requisitos obrigatórios:</p>
 <ul>
-    <li>Cadatrar gabaritos de cada prova</li>
-    <li>Cadatrar as resposta de cada aluno para cada prova</li>
+    <li>Cadastrar gabaritos de cada prova</li>
+    <li>Cadastrar as resposta de cada aluno para cada prova</li>
     <li>Verificar a nota final de cada aluno</li>
     <li>Listar os alunos aprovados</li>
 </ul>
