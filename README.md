@@ -35,66 +35,72 @@
     </tbody>
 </table>
 
-## Comandos de execução
-
-O primeiro build do projeto, execute:
-docker-compose up -d --build
-
-Em comum, execute
-docker-compose up -d
-
-Para derrubar os container, execute:
-docker-compose down
-
-
-## Dependence
-
-* [Python](https://www.python.org/) 3.7
-* [Django](https://www.djangoproject.com/) 2.1
-
-## Outros suportes
 
 ### Development
 
-- Main site
+- Página principal
     - http://localhost
 
-- Admin page
+- Página admin
     - http://localhost/admin
 
-### Commands
-create a django app
+
+## Comandos de execução
+
+O primeiro build do projeto, execute:
 ```
-$ docker exec python ./manage.py startapp {app_label}
+$ docker-compose up -d --build
+```
+
+Em comum, execute
+```
+$ docker-compose up -d
+```
+
+Para derrubar os container, execute:
+```
+$ docker-compose down
+```
+
+Para entrar no container do python e fazer instalações de dependências:
+```
+$ docker exec -it python-school sh
+```
+
+### Commands Python dentro do container de python: python-school
+
+criação de app django
+```
+$ python ./manage.py startapp {app_label}
 ```
 
 create models from existing database
 ```
-$ docker exec python ./manage.py inspectdb > {path/to/models.py}
+$ python ./manage.py inspectdb > {path/to/models.py}
 ```
 
 execute migration
 ```
-$ docker exec python ./manage.py migrate
+$ python ./manage.py migrate
 ```
 
 create a migration file
 ```
-$ docker exec python ./manage.py makemigrations
+$ python ./manage.py makemigrations
 ```
 
 create dump fixture files
 ```
-$ docker exec python ./manage.py dumpdata {app_label.model} --indent 2 > {path/to/fuxture.json}
+$ python ./manage.py dumpdata {app_label.model} --indent 2 > {path/to/fuxture.json}
 ```
 
 load data from fixture files
 ```
-$ docker exec python ./manage.py loaddata --verbosity 2 > {path/to/fuxture.json}
+$ python ./manage.py loaddata --verbosity 2 > {path/to/fuxture.json}
 ```
 
 create an admin account
 ```
-$ docker exec -it python ./manage.py createsuperuser
+$ python ./manage.py createsuperuser
 ```
 
