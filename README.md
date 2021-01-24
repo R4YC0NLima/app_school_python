@@ -1,4 +1,4 @@
-# Pokedex
+# Notas de Provas acadêmicas
 
 <p style="text-align: justify">
     O objetivo desse projeto é desenvolver uma Rest Api de Alunos aprovados em provas acadêmicas.
@@ -25,6 +25,10 @@
         <td><a target="_blank" href="https://www.docker.com/">https://www.docker.com/</a></td>
       </tr>   
       <tr>
+          <td>Python<td>
+          <td><a target="_blank" href="https://www.python.org/">https://www.python.org/</a></td>
+      </tr>
+      <tr>
         <td>DJango</td>
         <td><a target="_blank" href="https://docs.djangoproject.com/en/3.1/">https://docs.djangoproject.com/en/3.1//</a></td>
       </tr>   
@@ -45,11 +49,6 @@ docker-compose up -d
 
 Para derrubar os container, execute:
 docker-compose down
-
-
-
-
-# DJANGO
 
 
 ## Dependence
