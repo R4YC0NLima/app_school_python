@@ -101,9 +101,4 @@ create an admin account
 ```
 $ docker exec -it python ./manage.py createsuperuser
 ```
-# app_school_python
-
-
-
-
 
