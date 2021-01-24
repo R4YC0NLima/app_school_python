@@ -25,8 +25,8 @@
         <td><a target="_blank" href="https://www.docker.com/">https://www.docker.com/</a></td>
       </tr>   
       <tr>
-          <td>Python<td>
-          <td><a target="_blank" href="https://www.python.org/">https://www.python.org/</a></td>
+        <td>Python<td>
+        <td><a target="_blank" href="https://www.python.org/">https://www.python.org/</a></td>
       </tr>
       <tr>
         <td>DJango</td>
