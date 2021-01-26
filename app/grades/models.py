@@ -3,8 +3,6 @@ from django.db import models
 # Create your models here.
 from django.db import models
 
-class Questao(models)
-
 class Prova(models.Model):
     materia     = models.CharField(max_length=30)
     questao     = models.CharField(max_length=30)
