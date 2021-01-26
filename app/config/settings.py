@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'grades',
     'rest_framework',
-    'django_seed'
+    # 'django_seed'
     
 ]
 
@@ -82,7 +82,7 @@ WSGI_APPLICATION = 'config.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'django',
+        'NAME': 'alf_school',
         'USER': 'root',
         'PASSWORD': 'password',
         'HOST': 'mysql',

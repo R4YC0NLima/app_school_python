@@ -1,14 +1,14 @@
 from django.shortcuts import render
-from grades.models import Student
+from grades.models import Aluno
 from django.http import JsonResponse
-from grades.serializers import StudentSerializer
+from grades.serializers import AlunoSerializer
 from rest_framework import viewsets, mixins
 
 # Create your views here.
 
-class StudentViewSet(viewsets.ModelViewSet, mixins.ListModelMixin):
-    queryset = Student.objects.all()
-    serializer_class = StudentSerializer
+class AlunoViewSet(viewsets.ModelViewSet, mixins.ListModelMixin):
+    queryset = Aluno.objects.all()
+    serializer_class = AlunoSerializer
 
 # def grades(request):
 #     if(request.method == 'GET'):

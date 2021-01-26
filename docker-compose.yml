@@ -28,9 +28,19 @@ services:
       - data-volume:/var/lib/mysql
     environment:
       - MYSQL_ROOT_PASSWORD=password
-      - MYSQL_DATABASE=django
+      - MYSQL_DATABASE=alf_school
     healthcheck:
       test: "exit 0"
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin:5.0.2
+    container_name: phpmyadmin-school
+    environment:
+      
+      PMA_ARBITRARY: 1
+    ports:
+      - "8080:80"
+    volumes:
+      - .docker/phpmyadmin/data/sessions:/sessions
 
 volumes:
   data-volume:
